@@ -84,15 +84,6 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
-# Start a PHP server from a directory, optionally specifying the port
-# (Requires PHP 5.4.0+.)
-function phpserver() {
-	local port="${1:-4000}";
-	local ip=$(ipconfig getifaddr en1);
-	sleep 1 && open "http://${ip}:${port}/" &
-	php -S "${ip}:${port}";
-}
-
 # Compare original and gzipped file size
 function gz() {
 	local origsize=$(wc -c < "$1");
@@ -141,42 +132,6 @@ function getcertnames() {
 	fi;
 }
 
-# Normalize `open` across Linux, macOS, and Windows.
-# This is needed to make the `o` function (see below) cross-platform.
-if [ ! $(uname -s) = 'Darwin' ]; then
-	if grep -q Microsoft /proc/version; then
-		# Ubuntu on Windows using the Linux subsystem
-		alias open='explorer.exe';
-	else
-		alias open='xdg-open';
-	fi
-fi
-
-# `o` with no arguments opens the current directory, otherwise opens the given
-# location
-function o() {
-	if [ $# -eq 0 ]; then
-		open .;
-	else
-		open "$@";
-	fi;
-}
-
-# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
-# the `.git` directory, listing directories first. The output gets piped into
-# `less` with options to preserve color and line numbers, unless the output is
-# small enough for one screen.
-function tre() {
-	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-}
-
-# Kills applications that take up a lot of power to preserve battery
-function savebatt() {
-  fkill Creative Cloud
-  fkill Dropbox
-  fkill odrive
-}
-
 # Find port in use
 function fpiu () {
   lsof -i tcp:$@
@@ -184,8 +139,4 @@ function fpiu () {
 
 function killpid () {
   kill -9 $@
-}
-
-function dlmp3 () {
-  youtube-dl --extract-audio --audio-format mp3 $1
 }

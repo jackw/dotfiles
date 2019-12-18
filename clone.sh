@@ -1,31 +1,24 @@
 # Clone reposities into the projects folder
 function clone () {
-	# CD to folder where git repos are kept
-	# Change this value to your location
-	cd $HOME/projects
 
   # Open source projects
-	git clone git@github.com:zellwk/mappy-breakpoints.git
-	git clone git@github.com:zellwk/typi.git
-	git clone git@github.com:zellwk/zl-fetch.git
-  git clone git@github.com:zellwk/css-reset.git
+	git clone git@github.com:jackw/mappy-breakpoints.git
+	git clone git@github.com:jackw/typi.git
+	git clone git@github.com:jackw/zl-fetch.git
+  git clone git@github.com:jackw/css-reset.git
 
-  # Blog
-	git clone git@github.com:zellwk/zellwk.com.git
+  # Website
+	git clone git@github.com:jackw/jackw.com.git
 
-  # Products
-  git clone git@github.com:zellwk/students.zellwk.com.git
-
-	git clone git@github.com:zellwk/learnjavascript.today.git
-  git clone git@github.com:zellwk/learn-js-starter-pack.git
-  git clone git@github.com:zellwk/Learnjavascript-api.git
-	git clone git@github.com:zellwk/jsf.git
-
-  git clone git@github.com:zellwk/ayw.git ayw-website
-  git clone git@gitlab.com:zellwk/automating-your-workflow-book.git ayw-book
-
-  git clone git@gitlab.com:zellwk/mrt-salespage.git
 }
+
+$DIRECTORY=$HOME/Projects
+
+if [! -d "$DIRECTORY" ]; then
+  mkdir "$DIRECTORY"
+fi
+
+cd "$DIRECTORY"
 
 clone
 unset clone

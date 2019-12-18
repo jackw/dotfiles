@@ -3,6 +3,8 @@
 # Install Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+source ./nvm.sh
+
 # Install apps and binaries with Brew
 source ./brew.sh
 
