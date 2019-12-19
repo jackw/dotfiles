@@ -82,6 +82,5 @@
   "vsicons.projectDetection.disableDetect": true,
   "terminal.integrated.rendererType": "dom",
   "task.autoDetect": "off",
-  "editor.tabSize": 2,
   "editor.suggestSelection": "first"
 }
