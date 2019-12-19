@@ -1,4 +1,4 @@
-# Zell's dotfiles
+# Jack's dotfiles
 
 Here's my dotfiles repo.
 
@@ -46,4 +46,4 @@ If you want to give these dotfiles a try, you should first fork this repository,
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/zellwk/dotfiles/issues)!
+[welcome](https://github.com/jackw/dotfiles/issues)!

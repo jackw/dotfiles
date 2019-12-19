@@ -24,12 +24,6 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
-# Install and setup Mongodb
-brew tap mongodb/brew
-brew install mongodb-community
-sudo mkdir -p /data/db
-sudo chown -R `id -un` /data/db
-
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -47,7 +41,6 @@ brew install wget --with-iri
 
 brew install gmp
 brew install grep
-#brew install node
 
 # Install useful binaries.
 brew install ack
@@ -72,34 +65,34 @@ brew tap caskroom/cask
 ## Apps I use
 brew cask install 1password
 brew cask install alfred
-brew cask install beamer
-brew cask install dash
-brew cask install dropbox
-brew cask install firefox # Firefox
-brew cask install homebrew/cask-versions/firefox-nightly # Nightly
-brew cask install google-chrome #Chrome
-brew cask install homebrew/cask-versions/google-chrome-canary # Chrome Canary
-brew cask install grammarly
+brew cask install brave-browser
+brew cask install docker
+brew cask install expressvpn
+brew cask install figma
+brew cask install firefox
+brew cask install google-chrome
+brew cask install handbrake
+brew cask install homebrew/cask-versions/affinity-photo-beta
+brew cask install homebrew/cask-versions/firefox-nightly
+brew cask install homebrew/cask-versions/google-chrome-canary
+brew cask install insomnia
 brew cask install iterm2
 brew cask install kap
-brew cask install keycastr
 brew cask install marked
 brew cask install messenger
 brew cask install mongodb-compass
-brew cask install moom
-brew cask install mplayerx
-brew cask install notion
-brew cask install obs
 brew cask install odrive
-brew cask install postman
+brew cask install plex
+brew cask install rclone
+brew cask install rectangle
 brew cask install sketch
-brew cask install skitch
 brew cask install skype
 brew cask install slack
+brew cask install sourcetree
 brew cask install spotify
 brew cask install telegram
+brew cask install telegram-desktop
 brew cask install textexpander
-brew cask install tower
 brew cask install visual-studio-code
 brew cask install wechat
 brew cask install whatsapp

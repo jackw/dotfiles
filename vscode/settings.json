@@ -1,0 +1,87 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.colorDecorators": false,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/node_modules/[^@]*": false
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.fontSize": 13,
+  "editor.renderIndentGuides": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.snippetSuggestions": "top",
+  "explorer.autoReveal": true,
+  "extensions.autoUpdate": true,
+  "flow.fileExtensions": [".js", ".mjs", ".jsx", ".flow", ".json", ".es6"],
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "git.confirmSync": true,
+  "importCost.showCalculatingDecoration": true,
+  "keyboard.dispatch": "keyCode",
+  "search.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules/[^@]*": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true
+  },
+  "window.restoreWindows": "all",
+  "window.openFilesInNewWindow": "on",
+  "window.openFoldersInNewWindow": "on",
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Animals of Paradise",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2f8f8c",
+    "statusBar.debuggingBackground": "#ff8a50",
+    "statusBar.noFolderBackground": "#844e87"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "vscode-icons",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.startupEditor": "none",
+  "editor.renderControlCharacters": true,
+  "merge-conflict.codeLens.enabled": false,
+  "merge-conflict.decorators.enabled": false,
+  "files.associations": {
+    "*.html": "html",
+    "*.tpl": "html"
+  },
+  "javascript.validate.enable": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
+  "editor.wordWrap": "off",
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": true,
+  "editor.fontFamily": "Fira Code",
+  "stylelint.configOverrides": {
+    "ignoreFiles": ["**/*.js", "**/*.ts"]
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "liveshare.featureSet": "insiders",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.projectDetection.disableDetect": true,
+  "terminal.integrated.rendererType": "dom",
+  "task.autoDetect": "off",
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first"
+}
