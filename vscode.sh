@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Link settings.json
 mkdir -p "$HOME/Library/Application Support/Code/User/"
 ln -s settings.json "$HOME/Library/Application Support/Code/User/settings.json"
