@@ -48,6 +48,7 @@ brew install autojump
 brew install ffmpeg
 brew install git
 brew install git-lfs
+brew install hub
 brew install imagemagick --with-webp
 brew install p7zip
 brew install pigz
