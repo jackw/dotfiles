@@ -2,7 +2,7 @@
 
 # Link settings.json
 mkdir -p "$HOME/Library/Application Support/Code/User/"
-ln -s settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+ln -s ./vscodeFiles/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 
 # Install wanted extensions
 code --list-extensions | xargs -L 1 echo code --install-extension
