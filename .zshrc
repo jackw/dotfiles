@@ -57,24 +57,6 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-source $ZSH/oh-my-zsh.sh
-
-# Support brew installed zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Support brew install zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# User configuration
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend $PATH.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,exports,aliases,functions,extra}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
-
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -87,6 +69,18 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend $PATH.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -108,7 +102,6 @@ plugins=(
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -116,6 +109,17 @@ export NVM_DIR="$HOME/.nvm"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(hub alias -s)"
+alias zshconfig="code ~/.zshrc"
+alias git=hub
+alias ctop="docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
+
+function css-find() {
+    if [ "$1" != "" ]
+    then
+        elfinder -s $1  -i "build"
+    else
+        echo "css-find requires a css selector for searching"
+    fi
+}
+# eval "$(hub alias -s)"

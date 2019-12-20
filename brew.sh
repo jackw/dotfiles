@@ -60,8 +60,8 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
-brew install zsh-syntax-highlighting
-brew install zsh-autosuggestions
+#brew install zsh-syntax-highlighting
+#brew install zsh-autosuggestions
 
 # Installs Casks
 brew tap caskroom/cask
