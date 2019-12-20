@@ -36,8 +36,7 @@
   "window.restoreWindows": "all",
   "window.openFilesInNewWindow": "on",
   "window.openFoldersInNewWindow": "on",
-  "window.zoomLevel": 2,
-  "workbench.colorTheme": "Animals of Paradise",
+  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#2f8f8c",
     "statusBar.debuggingBackground": "#ff8a50",

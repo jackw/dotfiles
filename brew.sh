@@ -33,11 +33,11 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# Install GNU `sed`, overwriting the built-in `sed`. Or maybe not. It currently errors due to the arg.
+#brew install gnu-sed --with-default-names
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget` with IRI support. Or maybe not. It currently errors due to the arg.
+#brew install wget --with-iri
 
 brew install gmp
 brew install grep
@@ -53,15 +53,19 @@ brew install imagemagick --with-webp
 brew install p7zip
 brew install pigz
 brew install pv
+brew install rclone
 brew install rsync
 brew install rename
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
 
 # Installs Casks
 brew tap caskroom/cask
+brew tap homebrew/cask-fonts
 
 ## Apps I use
 brew cask install 1password
@@ -71,6 +75,7 @@ brew cask install docker
 brew cask install expressvpn
 brew cask install figma
 brew cask install firefox
+brew cask install font-fira-code
 brew cask install google-chrome
 brew cask install handbrake
 brew cask install homebrew/cask-versions/affinity-photo-beta
@@ -84,7 +89,6 @@ brew cask install messenger
 brew cask install mongodb-compass
 brew cask install odrive
 brew cask install plex
-brew cask install rclone
 brew cask install rectangle
 brew cask install sketch
 brew cask install skype
@@ -92,7 +96,6 @@ brew cask install slack
 brew cask install sourcetree
 brew cask install spotify
 brew cask install telegram
-brew cask install telegram-desktop
 brew cask install textexpander
 brew cask install visual-studio-code
 brew cask install wechat

@@ -57,6 +57,24 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+source $ZSH/oh-my-zsh.sh
+
+# Support brew installed zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Support brew install zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# User configuration
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend $PATH.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -69,18 +87,6 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend $PATH.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,exports,aliases,functions,extra}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

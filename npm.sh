@@ -1,5 +1,8 @@
 # Install commonly used clis
-sudo npm i -g commitizen
-sudo npm i -g http-server
-sudo npm i -g elfinder
-sudo npm i -g svgo
+npm i -g commitizen
+npm i -g cz-conventional-changelog
+npm i -g http-server
+npm i -g elfinder
+npm i -g svgo
+
+echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
