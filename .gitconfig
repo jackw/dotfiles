@@ -8,9 +8,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[user]
-	name = Jack Westbrook
-	email = jack.westbrook@gmail.com
 [alias]
 	l = log --pretty=format:\"%C(yellow) %h %Creset %ad %C(magenta bold)%d%Creset %s %C(green)(%an)%Creset\" -n 100 --graph --abbrev-commit --decorate --date="short"
 	st = status
@@ -101,3 +98,6 @@
 	required = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[user]
+	name = Jack Westbrook
+	email = jack.westbrook@gmail.com
