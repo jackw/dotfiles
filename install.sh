@@ -11,12 +11,15 @@ source ./nvm.sh
 # Install apps and binaries with Brew
 source ./brew.sh
 
-# Install global binaries
-source ./npm.sh
-
 # Configure VS Code.
-source ./vscode
+source ./vscode.sh
 
 # Configure MacOS defaults.
 # You only want to run this once during setup. Additional runs may reset changes you make manually.
-source ./macos
+source ./macos.sh
+
+# Link all these dotfiles to your home folder. Note there is brute force involved.
+source ./link.sh
+
+# Install LTS and global binaries
+source ./npm.sh
