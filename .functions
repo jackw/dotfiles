@@ -140,3 +140,13 @@ function fpiu () {
 function killpid () {
   kill -9 $@
 }
+
+# relies on elfinder npm module
+function cssfind() {
+    if [ "$1" != "" ]
+    then
+        elfinder -s $1  -i "build"
+    else
+        echo "css-find requires a css selector for searching"
+    fi
+}

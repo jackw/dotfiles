@@ -14,6 +14,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
+alias git=hub
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -149,6 +150,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Source .zshrc, which updates all commands
 alias updatezsh="source ~/.zshrc"
+alias zshconfig="code ~/.zshrc"
 
 # yarn run aliases
 alias run="yarn run"
@@ -157,8 +159,8 @@ alias rs="yarn server"
 alias rt="yarn test"
 alias rw="yarn test:watch"
 
-# Open node docs (See zsh node plugin)
-alias nd="node-docs"
+# Run ctop for checking docker container
+alias ctop="docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
 
 # Aliases for globally installed npm modules
 alias svgop="svgo --pretty --disable=mergePaths,convertShapeToPath --multipass"

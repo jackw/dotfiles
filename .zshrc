@@ -108,18 +108,5 @@ export NVM_DIR="$HOME/.nvm"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zshconfig="code ~/.zshrc"
-alias git=hub
-alias ctop="docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
-
-function css-find() {
-    if [ "$1" != "" ]
-    then
-        elfinder -s $1  -i "build"
-    else
-        echo "css-find requires a css selector for searching"
-    fi
-}
-# eval "$(hub alias -s)"
+# Set aliases in .aliases.
+# Set functions in .functions.
