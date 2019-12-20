@@ -13,7 +13,7 @@ function clone () {
 
 }
 
-$DIRECTORY=$HOME/Projects
+DIRECTORY="$HOME/Projects"
 
 mkdir -p "$DIRECTORY"
 cd "$DIRECTORY"
