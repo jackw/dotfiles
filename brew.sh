@@ -60,14 +60,18 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
-#brew install zsh-syntax-highlighting
-#brew install zsh-autosuggestions
+
+# Installs Mas
+brew install mas-cli/tap/mas
+
+# App store apps
+mas install 824183456
 
 # Installs Casks
 brew tap caskroom/cask
 brew tap homebrew/cask-fonts
 
-## Apps I use
+# Apps
 brew cask install 1password
 brew cask install alfred
 brew cask install brave-browser
@@ -78,7 +82,6 @@ brew cask install firefox
 brew cask install font-fira-code
 brew cask install google-chrome
 brew cask install handbrake
-brew cask install homebrew/cask-versions/affinity-photo-beta
 brew cask install homebrew/cask-versions/firefox-nightly
 brew cask install homebrew/cask-versions/google-chrome-canary
 brew cask install insomnia
@@ -98,7 +101,6 @@ brew cask install spotify
 brew cask install telegram
 brew cask install textexpander
 brew cask install visual-studio-code
-brew cask install wechat
 brew cask install whatsapp
 
 # Remove outdated versions from the cellar.
