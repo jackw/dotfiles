@@ -57,6 +57,7 @@ brew install rclone
 brew install rsync
 brew install rename
 brew install ssh-copy-id
+brew install tig
 brew install tree
 brew install vbindiff
 brew install youtube-dl
