@@ -60,6 +60,7 @@ brew install ssh-copy-id
 brew install tig
 brew install tree
 brew install vbindiff
+brew install yarn
 brew install youtube-dl
 
 # Installs Mas
