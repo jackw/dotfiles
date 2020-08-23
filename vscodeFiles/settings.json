@@ -61,5 +61,7 @@
     "**/.git": true,
     "**/.hg": true,
     "**/.svn": true
-  }
+  },
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
