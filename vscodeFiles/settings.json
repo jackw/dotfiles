@@ -3,12 +3,6 @@
   "css.validate": false,
   "scss.validate": false,
   "editor.colorDecorators": false,
-  "files.exclude": {
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.hg": true,
-    "**/.svn": true,
-  },
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.fontSize": 13,
@@ -17,20 +11,9 @@
   "editor.snippetSuggestions": "top",
   "explorer.autoReveal": true,
   "extensions.autoUpdate": true,
-  "flow.fileExtensions": [".js", ".mjs", ".jsx", ".flow", ".json", ".es6"],
-  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
   "git.confirmSync": true,
   "importCost.showCalculatingDecoration": true,
   "keyboard.dispatch": "keyCode",
-  "search.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
-    "**/bower_components": true,
-    "**/build": true,
-    "**/dist": true
-  },
   "window.restoreWindows": "all",
   "window.openFilesInNewWindow": "on",
   "window.openFoldersInNewWindow": "on",
@@ -47,9 +30,6 @@
     "*.html": "html",
     "*.tpl": "html"
   },
-  "javascript.validate.enable": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
   "editor.wordWrap": "off",
   "explorer.confirmDelete": false,
   "breadcrumbs.enabled": true,
@@ -57,7 +37,6 @@
   "stylelint.configOverrides": {
     "ignoreFiles": ["**/*.js", "**/*.ts"]
   },
-  "vsicons.dontShowNewVersionMessage": true,
   "liveshare.featureSet": "insiders",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -71,9 +50,16 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
   "vsicons.projectDetection.disableDetect": true,
-  "terminal.integrated.rendererType": "dom",
-  "task.autoDetect": "off",
-  "editor.suggestSelection": "first",
-  "workbench.colorTheme": "SynthWave '84"
+  "workbench.colorTheme": "SynthWave '84",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true
+  }
 }

@@ -89,6 +89,7 @@ brew cask install homebrew/cask-versions/google-chrome-canary
 brew cask install insomnia
 brew cask install iterm2
 brew cask install kap
+brew cask install kitematic
 brew cask install marked
 brew cask install messenger
 brew cask install mongodb-compass
